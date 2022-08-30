@@ -2,10 +2,14 @@
 自动生成MP代码工具——**AutoGenerator**
 
 ## 修改项目的绝对路径
-
+![img.png](img.png)
 
 ## 修改需要保存模块的包路径
+![img_1.png](img_1.png)
 
-## 修改数据库连接信息
+## 修改数据库源信息
+![img_2.png](img_2.png)
 
-## 运行codeGenerator中的main方法即可
+## 按需修改其他配置
+
+## 运行Main即可

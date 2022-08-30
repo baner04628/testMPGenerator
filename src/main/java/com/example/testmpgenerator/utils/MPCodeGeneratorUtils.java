@@ -1,22 +1,20 @@
-package com.example.testmpgenerator.Main;
+package com.example.testmpgenerator.utils;
 
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.baomidou.mybatisplus.generator.AutoGenerator;
 import com.baomidou.mybatisplus.generator.InjectionConfig;
+import com.baomidou.mybatisplus.generator.config.*;
 import com.baomidou.mybatisplus.generator.config.po.TableInfo;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
-import com.baomidou.mybatisplus.generator.config.*;
 import com.baomidou.mybatisplus.generator.engine.BeetlTemplateEngine;
-import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class CodeGenerator {
-
+public class MPCodeGeneratorUtils {
     private static final String PROJECT_RELATIVE_PATH="D:\\IdeaProjects\\testMPGenerator";  //项目的绝对路径
 
     // 演示例子，执行 main 方法控制台输入模块表名回车自动生成对应项目目录中
@@ -36,7 +34,7 @@ public class CodeGenerator {
         return null;
     }
 
-    public static void main(String[] args) {
+    public static void generataCode() {
 
         /*
           代码生成器
