@@ -8,7 +8,7 @@
 ![img_1.png](img_1.png)
 
 ## 修改数据库源信息
-![img_2.png](img_2.png)
+![img_3.png](img_3.png)
 
 ## 按需修改其他配置
 

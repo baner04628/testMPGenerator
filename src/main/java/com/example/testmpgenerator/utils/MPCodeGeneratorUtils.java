@@ -15,15 +15,19 @@ import java.util.List;
 import java.util.Scanner;
 
 public class MPCodeGeneratorUtils {
+
+    private final static String url = "jdbc:postgresql://localhost:5432/csg_grid";
+    private final static String driver = "org.postgresql.Driver";
+    private final static String username = "postgres";
+    private final static String password = "1382822201";
+
     private static final String PROJECT_RELATIVE_PATH="D:\\IdeaProjects\\testMPGenerator";  //项目的绝对路径
 
     // 演示例子，执行 main 方法控制台输入模块表名回车自动生成对应项目目录中
     public static String[] scanner(String tip) {
 
         Scanner scanner = new Scanner(System.in);
-        StringBuilder help = new StringBuilder();
-        help.append("（多个名称用空格分隔，回车结束）请输入" + tip + "：");
-        System.out.println(help.toString());
+        System.out.println("（多个名称用空格分隔，回车结束）请输入" + tip + "：");
         if (scanner.hasNextLine()) {
             String ipt = scanner.nextLine();
             if (StringUtils.isNotEmpty(ipt)) {
@@ -70,10 +74,10 @@ public class MPCodeGeneratorUtils {
         dsc.setDbType(DbType.POSTGRE_SQL);
         //mysql 8.0.3以上 加上serverTimezone=UTC
         //dsc.setUrl("jdbc:mysql://localhost:5432/csg_grid?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC");
-        dsc.setUrl("jdbc:postgresql://localhost:5432/csg_grid");
-        dsc.setDriverName("org.postgresql.Driver");
-        dsc.setUsername("postgres");
-        dsc.setPassword("1382822201");
+        dsc.setUrl(url);
+        dsc.setDriverName(driver);
+        dsc.setUsername(username);
+        dsc.setPassword(password);
         mpg.setDataSource(dsc);
 
         /*
