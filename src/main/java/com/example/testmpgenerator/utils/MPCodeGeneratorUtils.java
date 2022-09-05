@@ -16,13 +16,13 @@ import java.util.Scanner;
 
 public class MPCodeGeneratorUtils {
 
-    private final static DbType dbType = DbType.POSTGRE_SQL;
+    private final static DbType dbType = DbType.MYSQL;
 
-    private final static String url = "jdbc:postgresql://localhost:5432/csg_grid";
+//    private final static String url = "jdbc:postgresql://localhost:5432/csg_grid";
+    private final static String url = "jdbc:mysql://localhost:3306/wetech_admin?serverTimezone=GMT";
+    private final static String driver = "com.mysql.cj.jdbc.Driver";
 
-    private final static String driver = "org.postgresql.Driver";
-
-    private final static String username = "postgres";
+    private final static String username = "root";
 
     private final static String password = "1382822201";
 
@@ -30,7 +30,7 @@ public class MPCodeGeneratorUtils {
 
     private static final String parentPackage = "com.example.testmpgenerator"; // 项目父包
 
-    // 演示例子，执行 main 方法控制台输入模块表名回车自动生成对应项目目录中
+    // 控制台输入控制
     public static String[] scanner(String tip) {
 
         Scanner scanner = new Scanner(System.in);

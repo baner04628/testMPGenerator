@@ -61,6 +61,11 @@
         </dependency>
         <!-- 数据库驱动，根据自己需要加载相关数据库驱动依赖 -->
         <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <version>42.4.2</version>
