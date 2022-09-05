@@ -2,7 +2,7 @@
 自动生成MP代码工具——**AutoGenerator**
 
 ## 修改数据库源信息
-![img_3.png](img_3.png)
+![img_7.png](img_7.png)
 
 ## 修改项目的绝对路径
 ![img.png](img.png)

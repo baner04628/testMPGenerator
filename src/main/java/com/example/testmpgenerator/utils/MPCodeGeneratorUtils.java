@@ -16,6 +16,8 @@ import java.util.Scanner;
 
 public class MPCodeGeneratorUtils {
 
+    private final static DbType dbType = DbType.POSTGRE_SQL;
+
     private final static String url = "jdbc:postgresql://localhost:5432/csg_grid";
 
     private final static String driver = "org.postgresql.Driver";
@@ -75,10 +77,7 @@ public class MPCodeGeneratorUtils {
           数据源配置
          */
         DataSourceConfig dsc = new DataSourceConfig();
-        //dsc.setDbType(DbType.MYSQL);        //数据库类型	该类内置了常用的数据库类型【必须】
-        dsc.setDbType(DbType.POSTGRE_SQL);
-        //mysql 8.0.3以上 加上serverTimezone=UTC
-        //dsc.setUrl("jdbc:mysql://localhost:5432/csg_grid?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC");
+        dsc.setDbType(dbType);
         dsc.setUrl(url);
         dsc.setDriverName(driver);
         dsc.setUsername(username);
