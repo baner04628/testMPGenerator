@@ -8,8 +8,9 @@
 ![img.png](img.png)
 
 ## 修改需要保存模块的包路径
-![img_4.png](img_4.png)
+![img_5.png](img_5.png)
 
 ## 按需修改其他配置
 
-## 运行Main即可
+## 运行Main，控制台输入待生成的表名（不输入则默认生成所有表）
+![img_6.png](img_6.png)

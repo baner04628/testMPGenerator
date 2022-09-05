@@ -17,11 +17,16 @@ import java.util.Scanner;
 public class MPCodeGeneratorUtils {
 
     private final static String url = "jdbc:postgresql://localhost:5432/csg_grid";
+
     private final static String driver = "org.postgresql.Driver";
+
     private final static String username = "postgres";
+
     private final static String password = "1382822201";
 
     private static final String PROJECT_RELATIVE_PATH="D:\\IdeaProjects\\testMPGenerator";  //项目的绝对路径
+
+    private static final String parentPackage = "com.example.testmpgenerator"; // 项目父包
 
     // 演示例子，执行 main 方法控制台输入模块表名回车自动生成对应项目目录中
     public static String[] scanner(String tip) {
@@ -85,7 +90,7 @@ public class MPCodeGeneratorUtils {
          */
         PackageConfig pc = new PackageConfig();
 //        pc.setModuleName(scanner("模块名"));
-        pc.setParent("com.example.testmpgenerator"); //设置父包
+        pc.setParent(parentPackage); //设置父包
 //        pc.setEntity() //如果不给各个模块设置具体的包路径，则默认是当前parent目录的包下
 //        pc.setXml("mapper.xml");//不设置的话 默认是放在当前parent目录的mapper.xml包下
         mpg.setPackageInfo(pc);
